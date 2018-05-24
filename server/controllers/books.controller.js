@@ -50,7 +50,7 @@ module.exports = {
       })
   },
   getBookById: function(req, res) {
-    article
+    books
       .find({
         _id: req.params.id
       })
@@ -78,7 +78,7 @@ module.exports = {
       })
   },
   deleteBook: (req, res) => {
-    const user = req.headers.decoded.userId
+    // const user = req.headers.decoded.userId
     books
       .findByIdAndRemove({
         _id: req.params.id
