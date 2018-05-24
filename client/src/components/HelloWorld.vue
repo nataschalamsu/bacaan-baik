@@ -55,7 +55,9 @@
                   <h4 class="card-title">
                     <a href="#">{{ book.title }}</a>
                   </h4>
-                  <input type="button" value="Add Review">
+                  <router-link :to="{ path:'/' + book._id, params: { id: book._id } }">
+                    Add Review
+                  </router-link>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
                 <div class="card-footer">

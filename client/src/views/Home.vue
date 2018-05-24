@@ -10,12 +10,14 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import Navbar from '@/components/Navbar.vue'
+import Book from '@/components/Book.vue'
 
 export default {
   name: 'home',
   components: {
     HelloWorld,
-    Navbar
+    Navbar,
+    Book
   }
 }
 </script>
